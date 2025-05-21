@@ -45,7 +45,9 @@ public class BuilderImplementation implements BuilderInterface{
         return new ExerciseRoutine(workOutName, exerciseList, date, description);
     }
 
+    @Override
     public void reset(){
+        workOutName = null;
         exerciseList = new ArrayList<>();
         date = null;
         description = null;
